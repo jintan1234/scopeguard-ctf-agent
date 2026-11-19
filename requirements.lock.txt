@@ -7,7 +7,7 @@ packaging==26.3
 pefile==2024.8.26
 pillow==13.0.0
 pycparser==3.12
-pycryptodome==4.4.0
+pycryptodome==4.5.0
 pyelftools==0.33
 PyJWT==2.15.1
 pytesseract==0.3.13
