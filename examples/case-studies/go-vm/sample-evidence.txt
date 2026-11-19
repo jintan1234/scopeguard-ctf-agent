@@ -1,0 +1,11 @@
+Sanitized evidence shape
+
+vm_instruction_words=298
+target_values=72
+symbolic_inputs=23
+equation_solution_status=solved
+original_binary_stdout="got it!"
+original_binary_exit_code=0
+decoded_ascii=flag{I_am_the_last_one}
+assurance=reproducible_evidence
+source_artifact_sha256=bbcc391fd6a85872fd74ec43033d3a8788cebc4106b578cfac83de78fbefb1c7

@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+!tests/fixtures/generated/reverse-challenge.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local configuration
+.env
+.codex/config.toml
+config/docker-broker-token
+config/ctf-agent.toml
+config/private-denylist.txt
+
+# Runtime state
+/challenges/
+/logs/
+.cache/
+.npm-cache/
+
+# Large local tooling
+/tool-runtime/
+/third_party/
+docker/*/third_party/*
+!docker/analysis/third_party/stegseek-source.zip
+mcp/playwright/node_modules/
+mcp/playwright/browsers/
+mcp/playwright/profiles/
+
+# Local challenge attachments
+/*.apk
+/*.rar
+/*.zip
+/*.exe
+/*.7z
+/附件/
+/fruit/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp

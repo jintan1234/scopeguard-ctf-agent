@@ -1,0 +1,14 @@
+Pillow
+PyCryptodome
+sympy
+z3-solver
+numpy
+scapy
+pefile
+capstone
+pyelftools
+cryptography
+PyJWT
+pytesseract
+volatility3
+yara-python

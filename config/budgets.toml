@@ -1,0 +1,28 @@
+[task]
+max_wall_seconds = 1800
+max_tool_calls = 200
+max_consecutive_no_progress = 12
+max_retries_per_action = 2
+
+[output]
+max_inline_bytes = 65536
+max_artifact_bytes = 536870912
+max_response_bytes = 2097152
+
+[browser]
+action_timeout_seconds = 10
+navigation_timeout_seconds = 30
+max_network_entries = 500
+
+[command]
+default_timeout_seconds = 60
+max_timeout_seconds = 300
+
+[sandbox]
+max_concurrent = 2
+cpu_limit = 2.0
+memory_limit_mb = 4096
+pids_limit = 512
+shm_size_mb = 512
+log_max_size = "50m"
+log_max_file = 3

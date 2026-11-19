@@ -1,0 +1,39 @@
+# Copy this file to <project>/.codex/config.toml only after backup and user approval.
+# Project-scoped Codex configuration is preferred over changing the user's global config.
+
+[mcp_servers.ctf_control]
+command = "<PROJECT_ROOT>\\mcp\\ctf-control\\server.cmd"
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+
+[mcp_servers.ctf_control.tools.ctf_task_create]
+approval_mode = "approve"
+
+[mcp_servers.ctf_control.tools.ctf_task_update]
+approval_mode = "approve"
+
+[mcp_servers.ctf_control.tools.ctf_http_request]
+approval_mode = "approve"
+
+[mcp_servers.ctf_control.tools.ctf_flag_scan]
+approval_mode = "approve"
+
+[mcp_servers.ctf_control.tools.ctf_flag_submit]
+approval_mode = "approve"
+
+[mcp_servers.ctf_control.tools.ctf_evidence_record]
+approval_mode = "approve"
+
+[mcp_servers.ctf_control.tools.ctf_register_artifact]
+approval_mode = "approve"
+
+[mcp_servers.ctf_control.tools.ctf_remote_exec]
+approval_mode = "approve"
+
+[mcp_servers.ctf_control.tools.ctf_remote_http]
+approval_mode = "approve"
+
+[mcp_servers.playwright]
+command = "<PROJECT_ROOT>\\mcp\\playwright\\server.cmd"
+startup_timeout_sec = 60
+tool_timeout_sec = 180

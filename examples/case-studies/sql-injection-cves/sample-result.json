@@ -1,0 +1,30 @@
+{
+  "targets": {
+    "piwigo": "http://183.238.63.200:45712/",
+    "django": "http://183.238.63.200:45714/"
+  },
+  "checks": [
+    {
+      "name": "piwigo_baseline",
+      "result": "ok",
+      "flag_found": false
+    },
+    {
+      "name": "piwigo_time_oracle",
+      "result": "timing_difference_observed",
+      "flag_found": false
+    },
+    {
+      "name": "django_union_version",
+      "result": "sqlite_version_reflected",
+      "flag_found": false
+    },
+    {
+      "name": "django_schema_enumeration",
+      "result": "sqlite_master_reflected",
+      "flag_found": false
+    }
+  ],
+  "assurance": "unverified",
+  "note": "Vulnerabilities reproduced; no Flag existed in the lab database."
+}

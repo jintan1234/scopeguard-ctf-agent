@@ -1,0 +1,8 @@
+# Copy this file to config/private-denylist.txt before publishing.
+# Add one literal string per line that must never appear in the public tree.
+# The real file is ignored by Git.
+#
+# Examples:
+# your-platform-username
+# your-platform-email@example.com
+# your-personal-access-token

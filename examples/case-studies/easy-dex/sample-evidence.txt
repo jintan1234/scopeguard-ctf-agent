@@ -1,0 +1,12 @@
+Sanitized evidence shape
+
+recovered_dex_magic=DEX_VERSION
+recovered_dex_sha256=84ec6ba4aaa2655d9039dd31c366d6fae51081de8ebc701a63ef3d7a6dc3990a
+algorithm=Twofish-256 ECB
+key_source=android_resource:two_fish
+key_bytes=32
+plaintext_padding_valid=true
+roundtrip_ciphertext_matches=true
+flag=qwb{TH3y_Io<e_EACh_OTh3r_FOrEUER}
+assurance=reproducible_evidence
+source_artifact_sha256=b49ce889461caf2709e72bdfc40a8467b77241694188b0bd41b0b3ec276f818a

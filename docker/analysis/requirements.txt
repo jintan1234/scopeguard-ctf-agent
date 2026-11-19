@@ -1,0 +1,15 @@
+pwntools
+pycryptodome
+sympy
+z3-solver
+capstone
+pyelftools
+pefile
+scapy
+volatility3
+yara-python
+pillow
+requests
+beautifulsoup4
+PyJWT
+ropper

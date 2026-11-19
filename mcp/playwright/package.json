@@ -1,0 +1,9 @@
+{
+  "name": "ctf-agent-playwright-mcp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Pinned Playwright MCP for the local CTF Agent",
+  "dependencies": {
+    "@playwright/mcp": "0.0.85"
+  }
+}

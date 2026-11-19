@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scopeguard-ctf-agent"
+version = "0.1.0"
+description = "Scope-enforced, evidence-first CTF workflow for Codex and MCP"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+analysis = [
+  "Pillow",
+  "PyCryptodome",
+  "sympy",
+  "z3-solver",
+  "numpy",
+  "scapy",
+  "pefile",
+  "capstone",
+  "pyelftools",
+  "cryptography",
+  "PyJWT",
+  "pytesseract",
+  "volatility3",
+  "yara-python",
+]
+dev = [
+  "pytest>=8",
+]
+all = [
+  "Pillow",
+  "PyCryptodome",
+  "sympy",
+  "z3-solver",
+  "numpy",
+  "scapy",
+  "pefile",
+  "capstone",
+  "pyelftools",
+  "cryptography",
+  "PyJWT",
+  "pytesseract",
+  "volatility3",
+  "yara-python",
+  "pytest>=8",
+]
+
+[project.scripts]
+ctf-agent = "ctf_core.cli:main"
+ctf-mcp = "ctf_core.mcp_server:main"
+
+[project.urls]
+Documentation = "https://github.com/OWNER/REPOSITORY#readme"
+
+[tool.setuptools]
+package-dir = { "" = "tools" }
+packages = ["ctf_core"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tools"]

@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "cases": [
+    {
+      "id": "fruit-ret2libc",
+      "category": "pwn",
+      "skills": ["pwn"],
+      "techniques": ["stack overflow", "puts leak", "ret2libc", "ROP"],
+      "target": "183.238.63.200:45711",
+      "flag": "7a05d1dfc4bf420abba8956931189635",
+      "entry": "fruit-ret2libc/README.md",
+      "scripts": ["fruit-ret2libc/exp.py"],
+      "evidence": "fruit-ret2libc/sample-evidence.txt"
+    },
+    {
+      "id": "easy-dex",
+      "category": "reverse",
+      "skills": ["reverse"],
+      "techniques": ["Android native loader", "XOR", "zlib", "JADX", "Twofish"],
+      "target": "offline local APK",
+      "flag": "qwb{TH3y_Io<e_EACh_OTh3r_FOrEUER}",
+      "entry": "easy-dex/README.md",
+      "scripts": [
+        "easy-dex/recover_easy_dex.py",
+        "easy-dex/verify_twofish_flag.py"
+      ],
+      "evidence": "easy-dex/sample-evidence.txt"
+    },
+    {
+      "id": "go-vm",
+      "category": "reverse",
+      "skills": ["reverse"],
+      "techniques": ["Go ELF", "custom VM", "symbolic execution"],
+      "target": "offline local ELF",
+      "flag": "flag{I_am_the_last_one}",
+      "entry": "go-vm/README.md",
+      "scripts": ["go-vm/analyze_vm.py", "go-vm/run_solution.py"],
+      "evidence": "go-vm/sample-evidence.txt"
+    },
+    {
+      "id": "sql-injection-cves",
+      "category": "web",
+      "skills": ["web"],
+      "techniques": [
+        "ORDER BY injection",
+        "boolean oracle",
+        "Django annotate injection",
+        "UNION"
+      ],
+      "targets": [
+        "183.238.63.200:45712",
+        "183.238.63.200:45714"
+      ],
+      "flag": null,
+      "entry": "sql-injection-cves/README.md",
+      "scripts": [
+        "sql-injection-cves/piwigo_order_by.py",
+        "sql-injection-cves/django_alias_union.py"
+      ],
+      "evidence": "sql-injection-cves/sample-result.json"
+    },
+    {
+      "id": "sqli-labs-less1",
+      "category": "web",
+      "skills": ["web"],
+      "techniques": ["UNION SQL injection", "information_schema"],
+      "target": "192.168.156.23:80",
+      "flag": "Zuju76LsHVjnGxsFnnEK5tld",
+      "entry": "sqli-labs-less1/README.md",
+      "scripts": ["sqli-labs-less1/payloads.http"]
+    },
+    {
+      "id": "easyida",
+      "category": "reverse",
+      "skills": ["reverse"],
+      "techniques": ["Windows PE", "radare2", "Unicorn emulation"],
+      "target": "offline local PE",
+      "flag": "flag{simple_reverse}",
+      "entry": "easyida/README.md",
+      "scripts": ["easyida/solve.py"]
+    },
+    {
+      "id": "crypto-base64-xor",
+      "category": "crypto",
+      "skills": ["crypto"],
+      "techniques": ["Base64", "single-byte XOR", "bounded auto-decode"],
+      "target": "offline local text",
+      "flag": "FLAG{CRYPTO_BASE64_XOR_LOCAL_TEST}",
+      "entry": "crypto-base64-xor/README.md",
+      "scripts": ["crypto-base64-xor/solve.py"]
+    },
+    {
+      "id": "misc-fake-zip",
+      "category": "misc",
+      "skills": ["misc"],
+      "techniques": ["ZIP local header", "raw DEFLATE", "fake encryption"],
+      "target": "offline local ZIP",
+      "flag": "flag{down!_good_flag}",
+      "entry": "misc-fake-zip/README.md",
+      "scripts": ["misc-fake-zip/solve.py"]
+    }
+  ]
+}
